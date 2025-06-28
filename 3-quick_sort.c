@@ -73,5 +73,20 @@ _quick_sort(array, p + 1, high, size);
  */
 void quick_sort(int *array, size_t size)
 {
+int i;
+int check;
+check = 0;
+for (i = 0; i < (int)size; i++)
+{
+if (array[i] == array[i + 1])
+check = 1;
+else
+check = 0;
+}
+if (check == 1)
+{
+print_array(array, size);
+return;
+}
 _quick_sort(array, 0, size - 1, size);
 }
