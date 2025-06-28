@@ -24,7 +24,7 @@ for (i = low - 1, j = low; j < high; j++)
 if (array[j] < array[high])
 {
 i++;
-if (i != j)
+if (i != j && array[i] != array[j])
 {
 temp = array[j];
 array[j] = array[i];
