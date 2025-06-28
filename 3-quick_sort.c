@@ -83,7 +83,6 @@ check = 1;
 }
 if (check == 1)
 {
-print_array(array, size);
 return;
 }
 _quick_sort(array, 0, size - 1, size);
