@@ -79,10 +79,7 @@ check = 0;
 for (i = 0; i < (int)size; i++)
 {
 if (array[i] == array[i + 1])
-printf("hi");
 check = 1;
-else
-check = 0;
 }
 if (check == 1)
 {
